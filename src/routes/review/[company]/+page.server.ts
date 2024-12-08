@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 import { error } from "@sveltejs/kit";
-import { prisma } from "$lib/prisma";
+import prisma from "$lib/prisma";
 
 export const load: PageServerLoad = async ({ params }) => {
   const company = params.company;

@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import { prisma } from "$lib/prisma";
+import prisma from "$lib/prisma";
 
 export const load: PageServerLoad = async () => {
   const results = await prisma.result.findMany();
